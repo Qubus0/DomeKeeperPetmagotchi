@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://mods-unpacked/Ste-Petmagotchi/pet_display.gd" type="Script" id=2]
+
+[node name="PetPanel" type="Control"]
+margin_right = 24.0
+margin_bottom = 24.0
+script = ExtResource( 2 )
+size = Vector2( 4, 4 )
+layoutWeights = Vector2( 0, 10 )
+layoutPriority = 20
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpriteOrigin" type="Control" parent="CenterContainer"]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 12.0
+margin_bottom = 12.0
