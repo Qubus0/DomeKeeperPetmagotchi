@@ -1,6 +1,6 @@
 extends Node
 
-# Adds a speedrun timer
+# Adds a HUD element with your current pet
 const MOD_DIR := "Ste-Petmagotchi" # Name of the directory that this file is in
 const MODNAME_LOG_NAME := "Petmagotchi:Main"
 
@@ -18,8 +18,7 @@ func _init(modLoader = ModLoader) -> void:
 func install_script_extensions() -> void:
 	# Any script extensions should go in this directory, and should follow the same directory structure as vanilla
 	extensions_dir_path = mod_dir_path.plus_file("extensions")
-#	ModLoaderMod.install_script_extension(extensions_dir_path.plus_file(""))
-	ModLoaderMod.install_script_extension(extensions_dir_path.plus_file("content/gamemode/relichunt/Relichunt.gd"))
-	ModLoaderMod.install_script_extension(extensions_dir_path.plus_file("content/gamemode/prestige/Prestige.gd"))
+	ModLoaderMod.install_script_extension(extensions_dir_path.plus_file("content/drop/egg/Egg.gd"))
+	ModLoaderMod.install_script_extension(extensions_dir_path.plus_file("stages/level/LevelStage.gd"))
 
 

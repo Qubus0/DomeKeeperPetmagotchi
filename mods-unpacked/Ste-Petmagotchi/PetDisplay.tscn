@@ -2,7 +2,7 @@
 
 [ext_resource path="res://mods-unpacked/Ste-Petmagotchi/pet_display.gd" type="Script" id=2]
 
-[node name="PetPanel" type="Control"]
+[node name="PetPanel" type="HBoxContainer"]
 margin_right = 24.0
 margin_bottom = 24.0
 script = ExtResource( 2 )
@@ -11,8 +11,9 @@ layoutWeights = Vector2( 0, 10 )
 layoutPriority = 20
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+margin_right = 24.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
 
 [node name="SpriteOrigin" type="Control" parent="CenterContainer"]
 margin_left = 12.0
